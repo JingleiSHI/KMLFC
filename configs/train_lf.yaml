@@ -1,0 +1,77 @@
+defaults:
+  - _self_
+# Version
+version: 1.1
+# Random seed
+seed: 19491001
+# Parameters for Trainer
+# The path to the selected checkpoint
+ckpt: latest
+# The path to the result folder
+result_dir: /opt/data/private/PKLF_project/results
+# Input noise folder
+input_dir: /opt/data/private/PKLF_project/input_noise
+
+# Parameters for Checkpoint
+# Metric to monitor to save models
+checkpoint_metric: train_loss #train/loss
+# Number of checkpoints to keep
+num_checkpoints: 2
+
+# Parameters for Trainer Module
+# The number of GPU used in experiment
+num_gpus: 1
+# The number of nodes
+num_nodes: 1
+# The accelerator
+accelerator: cuda
+# Validation after how many epochs
+check_val_every_n_epoch: 1
+# Number of epoch for training
+training_epochs: 8
+# Training precision (fp16 or fp32)
+fp16: True
+# Sanity check runs n batches of val before starting the training routine
+num_sanity_val_steps: 1
+# Types of launching (train or infer)
+run_type: train
+# Learning rate
+lr: 0.01
+# LR decay epoch
+epoch_decay: 4
+# Input noise std
+noise_std: 0.005
+# Upsampling method
+upsampling: bicubic
+
+# Parameters for DataSet Module
+# The name of light field to be compressed
+lf_name: boxes #boxes #danger
+# The height of the LF view
+img_height: 512 #512 #432
+# The width of the LF view
+img_width: 512 #512 #624
+# The path to the light field folder
+data_path: /opt/data/private/PKLF_project/data
+# The viewpoint reading order (spiral or zigzag)
+read_mode: spiral
+# Which view is selected to be the anchor view (center, first or last)
+anchor_mode: center
+# Angular resolution of the target light field
+angular_resolution: 9
+
+
+# Parameters for Network Architecture
+# The size of kernel in each convolutional layer
+kernel_size: [3,3,3,3,3]
+# The ouput channel size of each layer
+channel_number: [50,50,50,50,50]  # 46
+# The portion of kernels controlling angular information
+angular_number: [1,1,1,1,1] #[6,6,6,6,0]
+# Kernel distance for dilation
+dilation_list: [1,2,2,2,1]
+# Number of Bessel basis (-1 represents full basis)
+num_base: -1
+# Number of centroids for quantization
+num_centroid: 256
+
