@@ -20,19 +20,18 @@ Before training the network, the preparation of the dataset is as follows:
 ### Training
 Coming soon
 
-### Evaluation
-
-
-### Pretrained Models
+### Download Pretrained Models
 We provide three models respectively pretrained on HCI LF dataset ([synth.pkl](https://pan.baidu.com/s/1ZAIttST3AliL87-0y3RMmQ?pwd=0003)), UCSD LF dataset ([realworld.pkl](https://pan.baidu.com/s/1Y2rfeUa6F-PW7UgTuhWoew?pwd=0004)) and EPFL LF dataset ([epfl.pkl](https://pan.baidu.com/s/1SkwXVK3uoIUvC9wj0Q2onQ?pwd=0002)), users can just download them and put them into the folder 'saved_model'.
+
+### Evaluation
 
 ## Citation
 Please consider citing our work if you find it useful.
 ```
-@inproceedings{shi2020learning,
-    title={Learning Fused Pixel and Feature-based View Reconstructions for Light Fields},
-    author={Jinglei Shi and Xiaoran Jiang and Christine Guillemot},
-    booktitle={IEEE. International Conference on Computer Vision and Pattern Recognition (CVPR)},
-    pages={2555--2564},
-    year={2020}}
+@article{shi2023learning,
+  title={Learning Kernel-Modulated Neural Representation for Efficient Light Field Compression},
+  author={Jinglei Shi and Yihong Xu and Christine Guillemot},
+  journal={arXiv preprint arXiv:2307.06143},
+  year={2023}
+}
 ```
