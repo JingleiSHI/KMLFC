@@ -1,7 +1,7 @@
 # KMLFC
 This is the repository for paper "**Learning Kernel-Modulated Neural Representation for Efficient Light Field Compression**" (**arXiv-2307.06143**).
 
-By [Jinglei Shi](https://jingleishi.github.io/),  [Yihong Xu](https://team.inria.fr/perception/team-members/yihong-xu/)  and  [Christine Guillemot](https://people.rennes.inria.fr/Christine.Guillemot/)
+By [Jinglei Shi](https://jingleishi.github.io/),  [Yihong Xu](https://github.com/yihongXU)  and  [Christine Guillemot](https://people.rennes.inria.fr/Christine.Guillemot/)
 
 <[Paper link](https://arxiv.org/abs/2307.06143)>
 
