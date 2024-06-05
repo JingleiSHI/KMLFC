@@ -53,7 +53,6 @@ Please consider citing our work if you find it useful.
   title={Learning Kernel-Modulated Neural Representation for Efficient Light Field Compression},
   author={Jinglei Shi and Yihong Xu and Christine Guillemot},
   journal={arXiv preprint arXiv:2307.06143},
-  year={2023}
-}
+  year={2023}}
 ```
 For any further question, please contact the author <jinglei.shi@nankai.edu.cn>
