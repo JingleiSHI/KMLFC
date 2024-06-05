@@ -40,9 +40,9 @@ The generated light fields will be accessible in the folder 'results/lf_name/tes
 ## Related Projects
 Another two projects related to this work will be released soon, they are:
 
-QDLR-NeRF (ICASSP-2023)
+[QDLR-NeRF (ICASSP-2023)](https://github.com/JingleiSHI/QDLR-NeRF)
 
-DDLF (TIP-2023)
+[DDLF (TIP-2022)](https://github.com/JingleiSHI/DDLF)
 
 Feel free to use and cite them!
 
