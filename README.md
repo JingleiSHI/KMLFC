@@ -21,7 +21,7 @@ Before training the network, the preparation of the dataset is as follows:
 Coming soon
 
 ### Download Pretrained Models
-We provide pretrained models of four synthetic HCI scenes ([hci.zip](https://pan.baidu.com/s/1NJcAUftGhHtmudTvAXt6Wg?pwd=lfcc)), of three realworld scenes captured using Lytro camera ([lytro.zip](https://pan.baidu.com/s/1GIC4zpFC9mOgCl0wL1qQIQ?pwd=lfcc)), and of three challenging scenes ([challenging.zip](https://pan.baidu.com/s/1SbiNtcGcr3cwqBhHVnF4Jw?pwd=lfcc))
+We provide pretrained models for four synthetic HCI scenes (hci.zip), three realworld scenes captured using Lytro camera (lytro.zip), and three challenging scenes (challenging.zip). Users can download them via [PanBaidu](https://pan.baidu.com/s/1no2sBxrRyax97JPB5F4aHQ?pwd=lfcc) or [Google Drive](https://drive.google.com/drive/folders/16ZU0tn7sn0hQOkqJMLN8GowCsmjGd2SZ?usp=sharing), then unzip them and put them into the folder 'results'
 
 ### Evaluation
 
