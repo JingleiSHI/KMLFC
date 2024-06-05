@@ -11,19 +11,34 @@ python==
 pytorch==
 torchvision==
 ```
-## Examples
 
-### Training
+## Training
 Coming soon
 
-### Download Pretrained Models
-We provide pretrained models for four synthetic HCI scenes (*hci.zip*), four realworld scenes captured using Lytro camera (*lytro.zip*), and three challenging scenes (*challenging.zip*). Users can download them via [PanBaidu](https://pan.baidu.com/s/1no2sBxrRyax97JPB5F4aHQ?pwd=lfcc) or [Google Drive](https://drive.google.com/drive/folders/16ZU0tn7sn0hQOkqJMLN8GowCsmjGd2SZ?usp=sharing), then unzip them and put them into the created folder 'results'. 
+## Download Pretrained Models
+We provide pretrained models for four synthetic HCI scenes (*hci.zip*), four realworld scenes captured using Lytro camera (*lytro.zip*), and three challenging scenes (*challenging.zip*). Users can download them via [PanBaidu](https://pan.baidu.com/s/1no2sBxrRyax97JPB5F4aHQ?pwd=lfcc) or [Google Drive](https://drive.google.com/drive/folders/16ZU0tn7sn0hQOkqJMLN8GowCsmjGd2SZ?usp=sharing), then create a new folder named 'results' and put the unzipped files into it. 
 
-We offered 7 models for every scene, with each model corresponding to a specific architecture setting, for instance, '*checkpoints_c50_a1*' means the number of channel for modulator in each angular direction is 1, and the total number of channel for both modulator and descriptor is 50 (the number of channel for descriptor is 50-2*1=48).
+We offer seven models for each scene, including ($c_m$, $c_d$)={(2,48),(2,63),(2,78),(2,93),(2,123),(2,153),(2,183)}, where each model corresponds to a specific architecture setting. For instance, '*checkpoints_c50_a1*' indicates that the number of channels for the modulator $c_m/2$ in each angular direction is 1, and the total number of channels for both modulator and descriptor is 50 (the number of channels for the descriptor $c_d$ is calculated as 50-2*1=48).
 
-### Evaluation
+## Evaluation
 To launch the generation of the light fields (decoding), users should first configure the file 'batch_infer.py' as follows:
-- Line 16-18: The path to the folders 'results', 'data', 'input_noise', where the folder 'results' is used to store the generated light fields, the folder 'data' is used to store the light fields to be learned during the training (which is not used for inference) and the folder 'input_noise' 
+- Lines 41-43: Specify the target light fields to be generated along with their spatial resolution. For example: scene_list = [['boxes', 512, 512]].
+- Lines 45-47: Define the target network architecture. For example: architecture_list = [[[50]*5, [1]*5]], this setting corresponds to the checkpoint 'checkpoints_c50_a1'.
+
+After configuring the above settings, users can simply launch the simulation by executing:
+```
+python batch_infer.py
+```
+The generated light fields will be accessible in the folder 'results/lf_name/test_cxx_axx'.
+
+## Related Projects
+Another two projects related to this work will be released soon, they are:
+
+QDLR-NeRF (ICASSP-2023)
+
+DDLF (TIP-2023)
+
+Feel free to use and cite them!
 
 ## Citation
 Please consider citing our work if you find it useful.
