@@ -15,7 +15,7 @@ def infer(config: DictConfig):
     checkpoint_dir = osp.join(config.result_dir, config.lf_name,
                               f'checkpoints_c{config.channel_number[0]}_a{config.angular_number[0]}')
 
-    checkpoint_path = osp.join(checkpoint_dir, 'quant.ckpt')
+    checkpoint_path = osp.join(checkpoint_dir, 'model.ckpt')
     trainer = Trainer(
         devices=config.num_gpus,
         num_nodes=config.num_nodes,

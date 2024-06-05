@@ -29,7 +29,7 @@ def calculate_FB_bases(L1):
     num_grid_points = ugrid.shape[0]
 
     kmax = 15
-    bessel = np.load('./bessel.npy')
+    bessel = np.load('../../../utils/bessel.npy')
     B = bessel[(bessel[:, 0] <= kmax) & (bessel[:, 3] <= np.pi * R * truncate_freq_factor)]
 
     idxB = np.argsort(B[:, 2])

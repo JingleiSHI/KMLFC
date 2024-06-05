@@ -1,3 +1,4 @@
+import os
 import subprocess
 import itertools
 
@@ -8,14 +9,15 @@ def work_on_single_scene(
         channel_list,
         angular_list
 ):
+    abs_path = os.getcwd()
     subprocess.call(
         [
             "python",
             "inference.py",
             "seed=19491001",
-            "result_dir=xxx/results",
-            "data_path=xxx/data",
-            "input_dir=xxx/input_noise",
+            f"result_dir={abs_path}/results",
+            f"data_path={abs_path}/data",
+            f"input_dir={abs_path}/input_noise",
             "check_val_every_n_epoch=1",
             "fp16=True",
             "training_epochs=12",
