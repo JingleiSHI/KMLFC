@@ -7,15 +7,15 @@ By [Jinglei Shi](https://jingleishi.github.io/),  [Yihong Xu](https://github.com
 
 ## Dependencies
 ```
-python=3.8.18
 numpy=1.24.3
-matplotlib=3.7.2
-hydra-core==1.3.2
-omegaconf==2.3.0
-pytorch=1.11.0
-torchvision==0.12.0
-pytorch-lightning=2.0.9
 scipy=1.10.1
+python=3.8.18
+pytorch=1.11.0
+omegaconf=2.3.0
+matplotlib=3.7.2
+hydra-core=1.3.2
+torchvision=0.12.0
+pytorch-lightning=2.0.9
 ```
 
 ## Training
@@ -56,3 +56,4 @@ Please consider citing our work if you find it useful.
   year={2023}
 }
 ```
+For any further question, please contact the author <jinglei.shi@nankai.edu.cn>
