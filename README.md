@@ -19,7 +19,7 @@ pytorch-lightning=2.0.9
 ```
 
 ## Training
-Coming soon
+The code for training, extraction of weights, quantization and Huffman coding will be released soon.
 
 ## Download Pretrained Models
 We provide pretrained models for four synthetic HCI scenes (*hci.zip*), four realworld scenes captured using Lytro camera (*lytro.zip*), and three challenging scenes (*challenging.zip*). Users can download them via [PanBaidu](https://pan.baidu.com/s/1no2sBxrRyax97JPB5F4aHQ?pwd=lfcc) or [Google Drive](https://drive.google.com/drive/folders/16ZU0tn7sn0hQOkqJMLN8GowCsmjGd2SZ?usp=sharing), then create a new folder named 'results' and put the unzipped files into it. 
